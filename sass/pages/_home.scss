@@ -1,0 +1,23 @@
+.section__about {
+    max-width: 112rem;
+    padding-top: 6.8rem;
+    margin: 0 auto;
+
+    @include media(tab-land) {
+        max-width: 79.6rem;
+    }
+
+    @include media(tab-port) {
+        max-width: 59rem;
+    }
+
+    @include media(phone) {
+        padding: 2.3rem 2rem 0px; 
+    }
+}
+
+.row {
+    @include media(tab-land) {
+        width: 100%;
+    }
+}

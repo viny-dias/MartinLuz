@@ -1,0 +1,69 @@
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+.heading {
+    &__primary {
+        margin-top: 5.2rem;
+        
+        font-weight: bold;
+        font-size: 2.4rem;
+        letter-spacing: .36rem;
+        text-transform: uppercase;
+        color: $color-secondary;
+
+        @include media(phone) {
+            margin-top: 10rem;
+        }
+    }
+
+    &__secondary {
+        width: 51rem;
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 5.2rem;
+        color: $color-white;
+
+        @include media(tab-land) {
+            width: 100%;
+            font-family: "Poppins", sans-serif;
+            font-size: 3.2rem;
+            font-weight: 600;
+            line-height: 4rem;
+        }
+    }
+
+    &__tertiary {
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 4rem;
+        color: $color-primary-dark;
+
+        @include media(tab-land) {
+           font-size: 2.8rem;
+        }
+    }
+}
+
+.box {
+    &__paragraph {
+        max-width: 50rem;
+
+        @include media(tab-land) {
+            max-width: initial;
+            margin-bottom: 2.3rem;
+        }
+        
+        .paragraph {
+            font-weight: normal;
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+            color: $color-grey-dark;
+        }
+
+        strong {
+            font-weight: bold;
+            color: $color-primary-light;
+        }
+    }
+}

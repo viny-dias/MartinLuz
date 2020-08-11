@@ -1,0 +1,60 @@
+.form {
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+
+    @include media(tab-land) {
+        width: initial;
+        margin: 0 auto;
+        margin-top: 2.3rem;
+    }
+
+    &-group:not(:last-child) {
+        margin-bottom: 2.4rem;
+    }
+
+    &__label {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: $color-primary-dark;
+    }
+
+    &__input {
+        width: 44.9rem;
+        height: 4rem;
+        border: 1px solid $color-primary-dark;
+        border-radius: .6rem;
+        font-size: 1.4rem;
+        color: $color-grey-light;
+
+        @include media(tab-land) {
+            width: 100%;
+        }
+    }
+
+    &__input::placeholder {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: $color-grey-light;
+        padding-left: 1.2rem;
+    }
+
+    &__btn {
+        width: 20rem;
+        height: 4rem;
+        background-color: $color-secondary;
+        font-size: 1.4rem;
+        font-weight: bold;
+        border: none;
+        border-radius: .6rem;
+        color: $color-primary-dark;
+        align-self: flex-end;
+        z-index: 2;
+
+        &:hover {
+            background-color: $color-transparent;
+            color: $color-secondary;
+            border: 1px solid $color-secondary;
+        }
+    }
+}
